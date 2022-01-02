@@ -1,0 +1,29 @@
+{
+  "name": "ejtraderiq",
+  "version": "1.0.0",
+  "description": "IQ OPTIOMS API",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ejtraderLabs/ejtraderiq-js.git"
+  },
+  "author": "traderpedroso <emerson@ejtrader.com>",
+  "license": "MIT",
+  "dependencies": {
+    "ws": "7.4.2",
+    "events": "^3.0.0",
+    "md5": "^2.3.0",
+    "request": "^2.88.2"
+  },
+  "bugs": {
+    "url": "https://github.com/ejtraderLabs/ejtraderiq-js/issues"
+  },
+  "homepage": "https://github.com/ejtraderLabs/ejtraderiq-js#readme",
+  "scripts": {
+    "test": "npm index.js"
+  },
+  "keywords": [
+    "iqoption",
+    "api"
+  ]
+}
