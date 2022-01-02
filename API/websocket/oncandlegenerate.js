@@ -1,7 +1,7 @@
 module.exports = function(active, callback) {
 	return new Promise((resolve, reject) => {
 		if (!(active in this.actives))
-			return reject("Ativo inválido.")
+			return reject("Invalid asset.")
 
 		const activeId = this.actives[active]
 

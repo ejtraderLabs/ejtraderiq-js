@@ -9,13 +9,13 @@ function trade(API, options) {
 
 	return new Promise(async (resolve, reject) => {
 		if (!(this.options.active in this.API.actives))
-			return reject("(trade) Ativo inválido.")
+			return reject("(trade) Invalid asset.")
 		else if (Number.isNaN(parseInt(this.options.amount)))
-			return reject("(trade) Valor inválido.")
+			return reject("(trade) Invalid value.")
 		else if (["CALL", "PUT"].indexOf(this.options.action) == -1)
-			return reject("(trade) Ação inválida.")
+			return reject("(trade) invalid action.")
 		else if (["BINARY", "DIGITAL", "FOREX"].indexOf(this.options.type) == -1)
-			return reject("(trade) Tipo inválido.")
+			return reject("(trade) Invalid type.")
 
 		try {
 			if (this.options.type == "BINARY") {

@@ -1,7 +1,7 @@
 module.exports = function(active, size, count, to) {
 	return new Promise((resolve, reject) => {
 		if (!(active in this.actives))
-			return reject("Ativo inválido.")
+			return reject("Invalid asset.")
 
 		const id = this.WebSocket.send("sendMessage", {
 			name: "get-candles",

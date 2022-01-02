@@ -1,7 +1,7 @@
 module.exports = function(type) {
 	return new Promise((resolve, reject) => {
 		if (["PRACTICE", "REAL"].indexOf(type) == -1)
-			return reject("Ativo inválido.")
+			return reject("Invalid asset.")
 
 		const id = this.WebSocket.send("sendMessage", {
 			name: "get-balances",
