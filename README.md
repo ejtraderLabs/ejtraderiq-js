@@ -1,3 +1,11 @@
+## Install ejtraderIQ
+
+
+```
+npm install ejtraderiq
+```
+
+
 ```js
 const IQOption = require("ejtraderiq")
 const {log, sleep} = require("ejtraderiq/utils")
