@@ -1,4 +1,4 @@
-'''
+''''
 const IQOption = require("ejtraderiq")
 const {log, sleep} = require("ejtraderiq/utils")
 
@@ -88,4 +88,4 @@ IQOption({
 	log(error.message)
 })
 
-'''
+''''
